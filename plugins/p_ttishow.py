@@ -47,7 +47,7 @@ async def save_group(bot, message):
             reply_markup=reply_markup)
     else:
         for u in message.new_chat_members:
-            await message.reply(f"Hey , {u.mention}, Welcome to {message.chat.title}")
+            await message.reply("")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
