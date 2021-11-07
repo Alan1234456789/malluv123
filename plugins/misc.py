@@ -159,7 +159,7 @@ async def imdb_search(client, message):
             ]
         ),
         quote=True,
-    )
+    
 
 @Client.on_callback_query(filters.regex('^imdb'))
 async def imdb_callback(bot: Client, query: CallbackQuery):
