@@ -148,12 +148,12 @@ async def imdb_search(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="YES", callback_data="autofilter_delete"
+                        '🔍 Search', switch_inline_query_current_chat=''
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="CANCEL", callback_data="close_data"
+                        '🔍 Search', switch_inline_query_current_chat=''
                     )
                 ],
             ]
